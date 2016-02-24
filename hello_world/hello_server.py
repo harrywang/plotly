@@ -1,0 +1,12 @@
+# Every function in this module will communicate with an external plotly server
+import plotly.plotly as py
+py.plot({                      # use `py.iplot` inside the ipython notebook
+    "data": [{
+        "x": [1, 2, 3],
+        "y": [4, 2, 5]
+    }],
+    "layout": {
+        "title": "hello world"
+    }
+}, filename='hello world',      # name of the file as saved in your plotly account
+    sharing='public')            # 'public' | 'private' | 'secret': Learn more: https://plot.ly/python/privacy
