@@ -8,6 +8,8 @@ pip install -r requirement.txt
 python -c "import plotly; plotly.tools.set_credentials_file(username='YourUsername', api_key='YourAPIKey')"
 ```
 
+Ployly only support matplotlib 1.3.x so far
+
 If having trouble with matplotlib, try http://stackoverflow.com/questions/21784641/installation-issue-with-matplotlib-python
 
 Create a file ~/.matplotlib/matplotlibrc there and add the following code: backend: TkAgg
